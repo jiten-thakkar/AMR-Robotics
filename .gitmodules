@@ -1,0 +1,3 @@
+[submodule "catkin_ws/src/pgm_map_creator"]
+	path = catkin_ws/src/pgm_map_creator
+	url = https://github.com/udacity/pgm_map_creator.git
