@@ -3,7 +3,7 @@
 <launch>
 
   <!-- World File -->
-  <arg name="world_file" default="$(find my_robot)/worlds/World1.world"/>
+  <arg name="world_file" default="$(find my_robot)/worlds/World2.world"/>
 
   <!-- Launch Gazebo World -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
@@ -34,5 +34,5 @@
               -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
 
 	  <!--launch rviz-->
-  <!--node name="rviz" pkg="rviz" type="rviz" respawn="false"/-->
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
 </launch>
