@@ -291,6 +291,15 @@
     <parent link="chassis"/>
     <child link="camera"/>
   </joint>
+<joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+    <parent link="camera"/>
+    <child link="camera_link_optical"/>
+  </joint>
+
+  <link name="camera_link_optical">
+  </link>
+	  
 	  <joint name="hokuyo_joint" type="fixed">
     <axis xyz="0 1 0" />
     <origin xyz=".15 0 .1" rpy="0 0 0"/>
